@@ -2,12 +2,12 @@ const D3Node = require('d3-node')
 const { generateString, generateImage } = require('./utils')
 
 function BarChart(data, options, {
-    selector: _selector = '.radar-chart-node',
+    selector: _selector = '.bar-chart-node',
     svgStyle: _svgStyle = `
         .arc text {font: 10px sans-serif; text-anchor: middle;}
         .arc path {stroke: #fff;}
     `,
-    container: _container = '<div style="width: 100%; height: 100%;" class="radar-chart-node"></div>'
+    container: _container = '<div style="width: 100%; height: 100%;" class="bar-chart-node"></div>'
 } = {}) {
     const d3n = new D3Node({
         selector: _selector,

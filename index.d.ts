@@ -3,23 +3,17 @@ export interface BarChartData {
     value: number;
 }
 
-export interface RadarChartMargin {
+export interface ChartMargin {
     top?: number;
     right?: number;
     bottom?: number;
     left?: number;
 }
 
-export interface RadarChartLegend {
-    title: string;
-    translateX: number;
-    translateY: number;
-}
-
 export interface BarChartOptions {
     w?: number;                     // Width of the circle
     h?: number;                     // Height of the circle
-    margin?: RadarChartMargin;      // The margins of the SVG
+    margin?: ChartMargin;      // The margins of the SVG
 }
 
 export interface SVGOptions {

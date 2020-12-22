@@ -1,9 +1,8 @@
-const { FILE } = require('dns');
 const fs = require('fs');
 const puppeteer = require('puppeteer')
 
 const FILE_DESTINATION = './test'
-const FILE_NAME = 'radar-chart'
+const FILE_NAME = 'bar-chart'
 
 const getFilePath = (dest, fileName, type) => dest + '/' + fileName + '.' + type
 
