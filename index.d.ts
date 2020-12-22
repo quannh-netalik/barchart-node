@@ -39,6 +39,6 @@ export interface BarImageOptions {
     fileName?: string;
 }
 
-export function BarChart(data: BarChartData[], options: BarChartOptions, svgOptions?: SVGOptions): any;
+export function BarChart(data: BarChartData[], options?: BarChartOptions, svgOptions?: SVGOptions): any;
 export function generateString(d3n: any, type?: BarGenerateType, options?: BarGenerateOptions): string
 export function generateImage(d3n: any, type?: BarChartImage, options?: BarImageOptions): any;
