@@ -22,7 +22,7 @@ export interface BarChartOptions {
     color?: string;
     lineHeight?: number;
     maxValue?: number;
-    fontSize: FontSize;
+    fontSize?: FontSize;
 }
 
 export interface SVGOptions {

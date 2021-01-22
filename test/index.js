@@ -19,7 +19,7 @@ const data = [
 ];
 
 const barChart = BarChart(data.sort((a, b) => a.name > b.name ? -1 : 1), {
-    w: 620,
+    w: 600,
     h: 1000,
     margin: {
         top: 20,
