@@ -3,17 +3,26 @@ export interface BarChartData {
     value: number;
 }
 
+export interface FontSize {
+    label?: number;
+    value?: number;
+}
+
 export interface ChartMargin {
-    top?: number;
+    top: number;
     right?: number;
     bottom?: number;
-    left?: number;
+    left: number;
 }
 
 export interface BarChartOptions {
     w?: number;                     // Width of the circle
     h?: number;                     // Height of the circle
     margin?: ChartMargin;      // The margins of the SVG
+    color?: string;
+    lineHeight?: number;
+    maxValue?: number;
+    fontSize: FontSize;
 }
 
 export interface SVGOptions {
