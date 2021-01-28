@@ -131,7 +131,7 @@ function BarChart(data, options, {
         // y position of the label is halfway down the bar
         .attr('y', ({ name }) => y(name) + cfg.lineHeight / 2 + VALUE_MIDDLE_POSITION + 7)
         // x position is near end of the bar
-        .attr('x', ({ value }) => LENGTH_PER_VALUE * value)
+        .attr('x', ({ value }) => LENGTH_PER_VALUE * value - 5)
         .text(({ value }) => value)
 
     return d3n
